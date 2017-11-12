@@ -17,7 +17,7 @@ class Topic(models.Model):
 
 
 class Entries(models.Model):
-    """Knowlege learned about theme"""
+    """Knowlege learned about topics"""
     topic = models.ForeignKey(Topic)
     text = models.TextField()
     date_added = models.DateTimeField(auto_now_add=True)
